@@ -5,11 +5,11 @@ type nota = int
 
 type resultado = { nombre: nombre; nota: nota }
 
-let evaluar r =
-  if r.nota >= 60 then
-    "El estudiante " ^ r.nombre ^ " aprobó con una nota " ^ string_of_int r.nota
+let evaluar resultado =
+  if resultado.nota >= 60 then
+    "El estudiante " ^ resultado.nombre ^ " aprobó con una nota " ^ string_of_int resultado.nota
   else
-    "El estudiante " ^ r.nombre ^ " reprobó con una nota " ^ string_of_int r.nota
+    "El estudiante " ^ resultado.nombre ^ " reprobó con una nota " ^ string_of_int resultado.nota
 
 
 let () =
